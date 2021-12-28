@@ -1,0 +1,66 @@
+.services {
+    background-color: $color-lightred;
+    margin: 0;
+
+    &__whole {
+        margin: 0 auto;
+        width: 70%;
+        padding: $section-space;
+    }
+
+    &__header {
+        text-align: center;
+        &--bold {
+           @include fontlook;
+           padding: 1rem;
+        }
+
+        &--light {
+            width: 45%;
+            margin: 0 auto 4rem;
+            color: $color-grey;
+        }
+    }
+
+    &__container {
+        height: 31rem;
+        // background-color: red;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        // padding: 4rem 0;
+    }
+
+    &__option {
+        width: 30%;
+        height: 10rem;
+        background-color: $color-white;
+        border-radius: 1rem;
+        padding: 1.5rem 0;
+
+        &-box {
+            width: 25%;
+            height: inherit;
+            float: left;
+            position: relative;
+        }
+        
+        &--icon {
+            @include  iconpos(25%, 3rem);
+        //  float: left;  
+        }
+
+        &--heading {
+            margin: .5em 0 .5em;
+            font-size: 1.2em;
+            font-weight: 400;
+        }
+
+        &--text {
+            color:  $color-grey;
+            width: 95%;
+            line-height: 1.5em;
+        }
+    }
+}

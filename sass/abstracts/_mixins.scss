@@ -1,0 +1,35 @@
+@mixin fontlook {
+    & {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 4.5rem;
+        font-weight: 500;
+    }
+}
+
+@mixin iconpos($per, $siz) {
+    & {
+        width: $siz;
+        height: auto;
+        position: absolute;
+        top: $per;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin listlook {
+    & {
+        width: 95%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 1rem 0 5rem;
+        
+
+        p {
+            width: 50%;
+            margin-bottom: 1rem;
+        }
+    }
+}

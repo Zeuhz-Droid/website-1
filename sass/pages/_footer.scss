@@ -1,0 +1,114 @@
+.footer {
+
+    &__whole {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5rem 5rem 0;
+        padding-bottom: 3rem;
+        border-bottom: 1px solid $color-grey;
+        align-items: flex-end;
+    }
+
+    &__box {
+        width: 25%;
+        // box-sizing: border-box;
+    }
+
+    &--logo {
+        max-width: 5rem;
+    }
+
+    &--text {
+        color: $color-grey;
+        padding: 1rem 0 0;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        li {
+            list-style: none;
+            width: 45%;
+            margin-top: 2rem;
+
+            a {
+                font-weight: 500;
+                color: $color-black;
+                text-decoration: none;
+
+                &:hover {
+                    color: $color-grey;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &__contact {
+        margin: 1.7rem 0;
+        align-self: flex-start;
+        position: relative;
+    }
+
+    &--header {
+        font-size: 2rem;
+        font-weight: 500;
+        display: block;
+    }
+
+    &--input {
+        width: 40rem;
+        border: none;
+        padding: 3rem 0 .5rem;
+        border-bottom: 1px solid $color-grey;
+
+        &:active,
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &--btn {
+        outline: none;
+        border: none;
+        background-color: inherit;
+    }
+
+    &--icon {
+        width: 2rem;
+        position: absolute;
+        top: 70%;
+        left: 95%;
+
+    }
+
+    &__foot {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: .5rem 5rem 5rem;
+    }
+
+    &--link {
+        font-size: 1rem;
+        font-style: italic;
+        text-decoration: none;
+        color: $color-grey;
+
+        &:hover {
+            color: $color-black;
+        }
+    }
+
+    &__handle {
+
+        &--icon {
+            width: 1.5rem;
+            padding-right: .5rem;
+        }
+    }
+}

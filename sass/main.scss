@@ -1,0 +1,19 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+
+@import "components/button";
+@import "components/bullet";
+
+@import "layout/layout";
+
+@import "pages/appointment";
+@import "pages/department";
+@import "pages/details";
+@import "pages/header";
+@import "pages/services";
+@import "pages/footer";

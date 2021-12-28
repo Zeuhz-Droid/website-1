@@ -1,0 +1,117 @@
+.department {
+    // width: 140rem;
+    // margin: 0 auto;
+    background-color: $color-white;
+    // width: 100%;
+    margin-bottom: 10rem;
+
+
+    &__heading-box {
+        margin: $section-space 0;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    &__heading {
+        @include fontlook;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        
+    }
+
+    &__arrow {
+        display: inline-block;
+        padding: 1.5rem 0;
+        font-size: 3rem;
+        cursor: pointer;
+
+        &--grey {
+            color: $color-grey;
+            
+        }
+
+        &--green {
+            color: $color-lightgreen;
+            
+        }
+    }
+
+    &__major {
+        height: 17rem;
+        margin: 0 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &-box {
+            width: 17%;
+            height: 12rem;
+            background-color: #fafaf2;
+            text-align: center;
+
+            &:first-child {
+                background-color: $color-coral;
+            }
+
+            // &:hover {
+            //     background-color: coral;
+            //     color: $color-white;
+            // }
+        }
+
+        &--icon {
+            width: 3rem;
+            margin-top: 2rem;
+            // @include  iconpos(30%, 3rem);
+        }
+
+        &--text {
+            padding: 1rem;
+            color: $color-grey;
+            // text-align: center;
+            // position: absolute;
+            // top: 60%;
+            // left: 50%;
+            // transform: translate(-50%, -50%);
+        }
+    }
+
+    &__ortho {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        &--img {
+            width: 62%;
+        }
+
+        &-box {
+            margin: 10rem;
+            box-sizing: border-box;
+            // width: 90%;
+        }
+
+        &--heading {
+            font-size: 3.5rem;
+            font-weight: 400;
+        }
+
+        &--text {
+            font-size: 1.6rem;
+            color: $color-grey;
+            padding: 3rem 0;
+            width: 60%;
+            line-height: 2.5rem;
+
+        }
+
+        &--list {
+            @include listlook;
+        }
+    }
+}
